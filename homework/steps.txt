@@ -1,0 +1,15 @@
+1   mkdir cli-practice
+2   cd cli-practice
+3   touch readme.md
+4   echo "Hi there, this is a readme file" > readme.md
+5   echo "This is the second line of the readme file" >> readme.md
+6   mv readme.md readme.txt
+7   mkdir document
+8   mv readme.txt ./document/introduction.txt
+9   cd document
+10  cp introduction.txt readme.txt
+11  echo "The quick brown fox jumps over a lazy dog" > readme.txt
+12  cp -a ~/cli-practice/document/ ~/cli-practice/docs
+13  rm -rf ~/cli-practice/document/
+14  mkdir -p ~/cli-practice/parent/child/docs
+15  cp ~/cli-practice/docs/introduction.txt ~/cli-practice/parent/child/docs/
